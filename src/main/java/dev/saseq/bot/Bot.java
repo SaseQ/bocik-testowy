@@ -1,5 +1,6 @@
 package dev.saseq.bot;
 
+import dev.saseq.bot.command.ChatCommand;
 import dev.saseq.bot.command.PingCommand;
 import dev.saseq.bot.config.BotConfig;
 import dev.saseq.command.managers.CommandManager;
@@ -41,6 +42,7 @@ public enum Bot {
 
     private void initCommands() {
         manager.addCommand(new PingCommand());
+        manager.addCommand(new ChatCommand());
         log.info("Commands initialized!");
     }
 
